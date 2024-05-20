@@ -25,7 +25,7 @@ export default function AddBalanceForm({ setIsOpen, setBalance }) {
   return (
     <div className={styles.formWrapper}>
       <h3>Add Balance</h3>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.crow} onSubmit={handleSubmit}>
         <input
           type="number"
           placeholder="Income Amount"
@@ -34,24 +34,16 @@ export default function AddBalanceForm({ setIsOpen, setBalance }) {
           required
         />
 
-        {/* <Button type="submit" style="primary" shadow>Add Balance</Button> */}
-        <button
-          type="submit"
-          className="button primary shadow&&styles.shadow"
-         
-        >
+        <button type="submit" className={styles.button}>
           Add Balance
         </button>
 
-        {/* <Button
-                    style='secondary'
-                    shadow
-                    handleClick={() => setIsOpen(false)}
-                >
-                    Cancel
-                </Button> */}
 
-        <button type="button" className="button secondary shadow&&styles.shadow" onClick= {() => setIsOpen(false)}>
+        <button
+          type="button"
+          className="button"
+          onClick={() => setIsOpen(false)}
+        >
           Cancel
         </button>
       </form>

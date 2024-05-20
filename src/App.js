@@ -12,11 +12,10 @@ import TransactionList from "./Components/TransactionList/TransactionList";
 
 import BarChart from "./Components/Barchart/BarChart";
 
-// import Chart from "./Components/Chart/chart";
 import PieChart from "./Components/PieChart/PieChart";
 
 function App() {
-  const [balance, setBalance] = useState(500);
+  const [balance, setBalance] = useState(0);
   const [expense, setExpense] = useState(0);
   const [isOpenExpense, setIsOpenExpense] = useState(false);
   const [isOpenBalance, setIsOpenBalance] = useState(false);
@@ -113,6 +112,7 @@ function App() {
   return (
     <>
       <div className="container">
+      <h1>Expense Tracker</h1>
         <div className="cardsWrapper">
           <WalletBalance
             money={balance}

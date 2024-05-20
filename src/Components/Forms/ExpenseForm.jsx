@@ -93,7 +93,7 @@ export default function ExpenseForm({
   return (
     <div className={styles.formWrapper}>
       <h3>{editId ? "Edit Expense" : "Add Expenses"}</h3>
-      <form onSubmit={editId ? handleEdit : handleAdd}>
+      <form className={styles.sparrow} onSubmit={editId ? handleEdit : handleAdd}>
         <input
           type="text"
           name="title"
@@ -134,13 +134,13 @@ export default function ExpenseForm({
           required
         />
 
-        <button type="submit" className="button primary shadow">
+        <button type="submit" className={`${styles.button} ${styles.primary}`}>
           {editId ? "Edit Expense" : "Add Expense"}
         </button>
 
         <button
           type="button"
-          className="button secondary shadow"
+          className="button"
           onClick={() => setIsOpen(false)}
         >
           Cancel

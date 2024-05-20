@@ -1,5 +1,6 @@
 .pieChartDive{
     /* background-color: var(--secondary-bg-color); */
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;

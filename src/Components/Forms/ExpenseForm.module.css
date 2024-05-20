@@ -7,6 +7,25 @@
     grid-template-columns: repeat(2, 1fr);
     gap:18px;
 }
+.formWrapper .sparrow .button {
+    background: #949393;
+    border: 0;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 12px 30px;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .formWrapper .sparrow .primary {
+    background: #f4bb4a;
+    color: #ffffff;
+  }
+
+
+
 .formWrapper input,
 .formWrapper select{
     background: #FBFBFB;

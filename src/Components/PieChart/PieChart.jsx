@@ -1,7 +1,6 @@
-
 import React from "react";
-import { Chart} from "react-google-charts";
-import './PieChart.css'
+import { Chart } from "react-google-charts";
+import "./PieChart.css";
 // Function to transform data
 const transformData = (data) => {
   if (!data || data.length === 0) {
@@ -21,21 +20,17 @@ export default function PieChart({ data }) {
   const formattedData = transformData(data);
 
   return (
-  
-      <div className="pieChartDive"><Chart
-      chartType="PieChart"
-      width={200}
-      height={200}
-      data={formattedData}
-      options={{
-        
-        backgroundColor: "none", // Ensure no background color
-        legend: { position: "bottom" }, // Position legend at the bottom
-      }}
-    /></div>
-      
-   
-  
-  
+    <div className="pieChartDive">
+      <Chart
+        chartType="PieChart"
+        width={200}
+        height={200}
+        data={formattedData}
+        options={{
+          backgroundColor: "none", // Ensure no background color
+          legend: { position: "bottom" }, // Position legend at the bottom
+        }}
+      />
+    </div>
   );
 }
